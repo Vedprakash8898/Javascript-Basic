@@ -1,0 +1,79 @@
+<script>
+    // Comparision Operators
+    // let x = 2;
+    /*
+
+    // Relations Operators
+    console.log(x > 4); //true //greater than symbol
+    console.log(x >= 5); //true  //greater than equal than Symbol
+    console.log(x < 5); //false
+    console.log(x <= 5); //true
+
+    // Equality Operators
+    console.log(x === 5); //true
+    console.log(x !== 5); //false
+
+    // comparison with === operators (strict Oprerators) (Same Type + Same Value)
+    console.log(5 === 5); //same value
+     console.log('5'=== 5); 
+
+     */
+
+    // comparison with == operators
+    // console.log(5 == '5');
+    console.log(true == 2);
+
+
+    // Ternary Operators
+    let number = 90;
+    let type = number > 100 ? 'Bigger No' : 'Smaller No';
+    console.log(type);
+
+    // One More Ex
+    let points = 920;
+    let ans = points > 950 ? 'More Points' : 'Less points';
+    console.log(ans); 
+
+
+
+    // logical Operators
+    // Logical (&&) (Return True if Both Operands are True)
+    console.log(true && true);
+    console.log(false && true);
+ /*
+    let highIncome = true;
+    let goodCredit = true;
+    let eligibleforLoan = highIncome && goodCredit;
+    console.log(eligibleforLoan);
+*/
+    // Logical (||) (Return True If one of The Operands is True)
+    let highIncome = false;
+    let goodCredit = false;
+    let eligibleforLoan = highIncome || goodCredit;
+    console.log('Eligible for Loan' , eligibleforLoan); //false
+
+    //NOT (!)
+    let applicationRefused = !eligibleforLoan;
+    console.log('Application refused', applicationRefused); //true
+
+    // Logical Operators With Non-booleans Value
+    // falsy (false value) in operators
+    // (1)undefined (2) Null (3) 0 (4) false (5) Nan
+    // Anything that is Not falsy ---> Truthy (From above statement)
+
+    const value = false || 1 || 2 || 3 ;
+    console.log(value); //1 (Truthy Value) also known as Short-circuiting 
+
+    // Examples for OR (||) 
+    let userColor = undefined;
+    let defaultColour = 'green';
+    let CurrentColor = userColor || defaultColour ;
+    console.log(CurrentColor); //Green (If we set to Undefined then default current will be Selected )
+
+    
+    let x = 10 ;
+    let y = x++;
+    console.log(y);
+
+
+</script>
