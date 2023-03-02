@@ -1,0 +1,23 @@
+<!-- Count truthy -->
+<script>
+const isActive = true;
+const name = ''; //falsy (False) 
+if(name){
+    console.log("Hello world");
+}
+</script>
+
+<!-- All List of falsy Value in Javascript
+(1) Falsy (2) Undefined (3) Null (4)'' (5) false (6) 0 (7) Nan -->
+
+<script>
+    const array = [0,null,2,3,4];
+    console.log(countTruthy(array));
+    function countTruthy(array){
+        let count = 0;
+        for(let value of array)
+        if(value)
+        count++;
+        return count
+}
+</script>

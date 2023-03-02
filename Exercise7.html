@@ -1,0 +1,22 @@
+<!-- String properties -->
+<script>
+    // string properties in Js
+    const Movie = {
+        title:'Raw',
+        ReleaseYear:2022,
+        rating:"4",
+        director:"Agent"
+    }
+    console.log(Movie);
+    // for In Loops 
+    for(let keys in Movie){
+        // console.log(keys);
+        // console.log( keys  + ':'  ,  Movie[keys]);
+        
+
+        // we have apply condition in an objects to print string 
+        if(typeof Movie[keys] === 'string'){
+            console.log(keys , Movie[keys]);
+        }
+    }
+</script>

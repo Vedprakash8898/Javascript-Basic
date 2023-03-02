@@ -1,0 +1,19 @@
+<!-- (Q) Sum of multiples of Three and  Fives -->
+<script>
+    
+    function sumMultipe(input){
+        let sumMultipe = 0;
+        for(let i = 0 ; i <= input ; i++){
+            if(i % 3 === 0 || i % 5 === 0){
+                sumMultipe += i;
+            }
+        }
+        return sumMultipe;
+
+        
+    }
+    
+    console.log(sumMultipe(35));
+
+
+</script>

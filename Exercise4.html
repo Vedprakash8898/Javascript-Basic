@@ -1,0 +1,27 @@
+<script>
+//    Speed Limit = 70 then 
+// if increase 5km => driver gets (1 Points)
+// if increase By 12 ==> Licience will suspended
+
+
+checkSpeed(90);
+
+
+ function checkSpeed(speed){
+    const speedlimit = 70;
+    const kmperPoints = 5;
+    if (speed < speedlimit + kmperPoints){
+        console.log("Speed is Okk");
+        return;
+
+    }
+    else{
+        const points = (speed - speedlimit)  / kmperPoints;
+        if (points >= 12){
+        console.log('license suspended');
+        } else {
+            console.log('Points' , Math.floor(points));
+        }
+    }
+}
+    </script>

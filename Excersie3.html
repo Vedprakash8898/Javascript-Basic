@@ -1,0 +1,29 @@
+<!-- Problems -->
+<!-- Divisible By 3 ==> Fizz -->
+<!-- Divisible By 5 ==> Buzz -->
+<!-- Divisible By Both 3 and 5 ==> FizzBuzz -->
+<!-- Not divisible By 3 or 5  ==> Same Input -->
+<!-- Not a Number => 'not a number' -->
+
+<script>
+    const output = FizzBuzz(true);
+    console.log(output);
+    function FizzBuzz(input){
+        if(typeof input !== 'number')
+        return NaN;
+        
+
+        if((input % 3 === 0) && (input % 5 === 0))
+        return 'FizzBuzz';
+        
+        if(input % 3 === 0)
+        return 'Fizz';
+
+        if(input % 5 === 0)
+        return 'buzz';
+
+
+        return input;
+
+    }
+</script>
