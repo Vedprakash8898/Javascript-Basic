@@ -1,0 +1,43 @@
+<!-- Values Types or (Primitive Types): Number , String , Boolean , Symbol , undefined , Null  -->
+<!-- Reference Type : Objects , Function and Array -->
+<!-- primitive data Types examples -->
+<script>
+    let x = 5;
+    let y = x; //5
+    x = 15;
+    console.log(x,"X Values");
+    console.log(y , "Y values");
+    // Primitives : Primitives are Copied by Their values
+    // Objects : Objects are Copied by  Their Reference
+
+    // Reference Types
+    let ans = { value : 10 } ;
+    let fans = ans;
+    
+    ans.value = 20;
+
+    console.log(ans);
+    console.log(fans);
+
+    // Examples of primitive
+    // Primitives : Primitives are Copied by Their values
+    let number = 15;
+    function increase(number){
+        number++;
+    }
+    increase(number);
+    console.log(number);
+
+
+    // Examples of Reference 
+    let object = { value: 19} ;
+    function increase(object){
+        object.value++;
+    }
+    increase(object);
+    console.log(object);
+
+
+
+    
+</script>

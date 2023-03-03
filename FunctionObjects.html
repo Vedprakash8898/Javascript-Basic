@@ -1,0 +1,60 @@
+<!-- All function are Objects in Javascript, 
+======>Purple objects are Method ,
+======>Blues Icon are Property-->
+<!-- First behaviour : if we console.this keyword outside object we get window objects
+console.log(this); -->
+
+
+
+
+<script>
+    let name = {
+        firstname: "Vedprakash" ,
+        lastname: "Bind" ,
+    }
+    // name.printFullname();
+    // if we want to access a Function then we have to use 
+   let  printFullname = function (Hometown, state) {
+        console.log(this.firstname + " " + this.lastname +" from " + Hometown + " , " , state);
+    }
+    
+    let name2 = {
+        firstname : "Tejprakash" ,
+        lastname : "Bind" ,
+    } 
+
+    let name3 = {
+        firstname : "rahul" ,
+        lastname : "pal" ,
+    }
+    
+    // function Borrowing (Call Method)
+    // In call Method first arugument is Reference to (This) variable and second argument is an Reference to parameter passed.
+    printFullname.call(name , "Uttarpradesh", "Maharashtra"); //Function Borrowing in call Method
+    printFullname.call(name2 , "Ranchi"," Goa");
+    printFullname.apply(name3 , ["UttarKhand"," Raipur"]);
+    // The main Difference Between call and apply Method Is that in call Method we passed argument as single-single separted with Comma and
+    // in Apply Method we have to pass arugument in List of an Array  
+
+    // Bind Method : It is Does Not Directly called A function its return a function rtahen then we Invoke it later
+    let printMyName = printFullname.bind(name , "Uttarpradesh", "Maharashtra");
+    console.log(printMyName);
+    printMyName(); //it is basically bind the method and Create a copy of these Method.
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</script>

@@ -1,0 +1,39 @@
+<script>
+    // // Factory Function
+    // function createCircle(radius) {
+    //     return {
+    //         radius ,
+    //         draw: function(){
+    //             console.log('draw');
+    //         }
+    //     };
+    // }
+    // const circle = createCircle(5);
+    // console.log(circle);
+
+
+
+    // Constructor Function
+    function Circle(radius){
+        this.radius = radius;
+        this.draw = function() {
+            console.log('Test');
+        }
+
+    }
+    const another = new Circle(5);
+    console.log(another);
+    // Property In contructor we have
+   const ans = another.constructor;
+   console.log(ans); 
+
+   const oldans = Circle.constructor;
+   console.log(oldans);
+
+
+  //Constructor Property in Js   
+   new String();  // ''(single quotes) , ""((Double quotes) ,``
+   new Boolean(); //true , false
+   new Number(); // 1, 2 , 3 ,....
+
+</script>

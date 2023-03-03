@@ -1,0 +1,20 @@
+// <!-- Constructor Function -->
+// <!-- In Constructor Function we have to use naming Convention 
+// Pascal Notification hai.. -->
+
+<script>
+    function Alien(name , tech){
+        this.name = name;
+        this.tech = tech;
+
+        this.work = function(){
+            console.log("Check Function is Acessing");
+        }
+
+    }
+
+    let alien1 = new Alien('Ved','React');
+    alien1.tech = 'Angular' 
+    console.log(alien1);
+    alien1.work();
+</script>

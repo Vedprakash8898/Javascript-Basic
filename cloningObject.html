@@ -1,0 +1,26 @@
+<script>
+    const circle = {
+        radius: 25,
+        draw() {
+            console.log("Test");
+        }
+    };
+
+    // we have to create another object to make Clone of it
+    // const another = {};
+
+    // For.. in Loops
+
+    // for(let key in circle)
+    // another[key] = circle[key];
+    // console.log(another);
+    // With ES6 
+    const another = Object.assign({
+        color:"Yellow"
+    },circle);
+    console.log(another);
+
+    // Simplest way to Clone an  objects Using Spread Operators
+    let ans = {...circle};
+    console.log(ans);
+</script>

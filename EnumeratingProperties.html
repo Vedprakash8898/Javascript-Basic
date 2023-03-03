@@ -1,0 +1,29 @@
+<script>
+    const circle = {
+        radius: 5 ,
+        draw() {
+            console.log('draw');
+        }
+    };
+
+    // For ... in Loops in an   Object iteration
+    for(let key in circle){
+        // console.log(key);
+        console.log(key , ':' , circle[key]);
+    }
+
+    // for .... of Loops in an Objects 
+    // for(let ans of circle){
+    //     console.log(ans);
+    // }
+    for(let key of Object.keys(circle)){ //Keys: access kar sakte hai
+        console.log(key);
+    }
+
+    // Object.keys()
+
+    for(let entry of  Object.entries(circle)){
+        console.log(entry); //It return an Arrays in Loops
+
+    }
+</script>

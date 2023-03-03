@@ -1,0 +1,17 @@
+<!-- Dynamic Nature of Objects -->
+<script>
+    // const ===> We cannot Reassign a Variable
+    const circle = {
+        radius: 1
+    };
+    // we can also add various Objects To Circle
+    circle.length = '100cm';
+    circle.draw = function() {
+        console.log("Test");
+    }
+     
+    // we have Delete Method to Delete Property In Objects
+    delete circle.length;
+    delete circle.draw;
+    console.log(circle);
+</script>

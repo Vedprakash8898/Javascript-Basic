@@ -1,0 +1,21 @@
+<script>
+// Factory Function 
+function createCircle(radius){
+    return {
+    radius,
+     draw() {
+        console.log('Draw');
+     } ,
+    write() {
+        console.log("write inside circle");
+    } 
+};
+
+}
+const circle1 = createCircle(1);
+console.log(circle1);
+
+const circle2 = createCircle(25);
+console.log(circle2);
+
+</script>
